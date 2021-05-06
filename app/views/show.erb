@@ -1,0 +1,9 @@
+<h1 style="text-align: center;"><%=@article.title%></h1>
+<p><%=@article.content%></p>
+
+<button onclick="document.location='/articles/<%=@article.id%>/edit'">Edit Article</button><br><br>
+<form action='/articles/<%=@article.id%>' method='POST'>
+    <input id="hidden" type="hidden" name="_method" value="DELETE">
+
+    <input type="submit" value = "Delete Article">
+</form>

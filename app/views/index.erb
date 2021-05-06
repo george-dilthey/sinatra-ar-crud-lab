@@ -1,0 +1,4 @@
+<h1 style="text-align: center;">George's Magazines</h1>
+<%@articles.each do |article|%>
+    <h2><a href="/articles/<%=article.id%>"><%=article.title%></a></h2>
+<%end%>
